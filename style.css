@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e layout geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/nexxus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(167, 5, 118);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo_header {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+}
+
+#buttons_header button {
+    margin-left: 20px; 
+    padding: 8px 16px; 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px; 
+    background-color: transparent;
+    color: antiquewhite; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#buttons_header button:hover {
+    background-color: #fff;
+    color: rgb(167, 5, 118);
+}
+
+main {
+    flex: 1;
+    margin-top: 100px;
+    padding-top: 80px; /* O valor deve ser a altura do header */
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+#intro h1 {
+    font-size: 2.5rem;
+    color: rgb(167, 5, 118);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+#intro-preco h1 {
+    font-size: 2.5rem;
+    color: rgb(167, 5, 118);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#intro-preco p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+#intro-preco button {
+    justify-content: center;
+}
+
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.planet-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.planet-image:hover {
+    transform: scale(1.1);
+}
+
+.explore-btn {
+    padding: 12px 30px;
+    background-color: rgb(224, 9, 160);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: rgb(120, 3, 84);
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(167, 5, 118);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
