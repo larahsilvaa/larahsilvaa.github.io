@@ -1,0 +1,88 @@
+body, ul, li, a, h1, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: url('../container/fundo.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fdd835;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    width: 10px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4caf50; 
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #388e3c;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+        background-color: #fdd835;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar ul.active {
+        display: flex; 
+    }
+
+    .navbar::before {
+        content: '☰';
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #444;
+    }
+
+    .navbar.active::before {
+        content: '✕';
+    }
+}
