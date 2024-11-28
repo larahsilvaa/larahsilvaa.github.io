@@ -84,5 +84,6 @@ body {
 
     .navbar.active::before {
         content: '✕';
+        display: flex;
     }
 }
