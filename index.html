@@ -19,4 +19,16 @@
         </nav>
     </header>
 </body>
+
+<script>
+    // Seleciona a navbar e o menu
+    const navbar = document.querySelector('.navbar');
+    const menu = document.querySelector('.navbar ul');
+
+    // Adiciona um evento de clique à navbar
+    navbar.addEventListener('click', () => {
+        menu.classList.toggle('active'); // Alterna a classe 'active' no menu
+    });
+</script>
+
 </html>
