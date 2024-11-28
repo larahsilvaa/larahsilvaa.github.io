@@ -5,7 +5,7 @@ body, ul, li, a, h1, button {
 }
 body {
     height: 100vh;
-    background-image: url('../container/fundo.png');
+    background-color: #c1f7c4;
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -86,4 +86,122 @@ body {
         content: '✕';
         display: flex;
     }
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.intro-content {
+    max-width: 50%;
+}
+
+.intro-content h1 {
+    font-size: 2.5em;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #388e3c;
+}
+
+.intro-image {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefit-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: #666;
+}
+
+.myths ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.myths li {
+    margin-bottom: 10px;
+}
+
+.myths strong {
+    color: #4caf50;
+}
+
+.conclusion {
+    text-align: center;
+    background-color: #fdd835;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.conclusion p {
+    font-size: 1.2em;
+    color: #555;
 }
