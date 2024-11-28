@@ -18,16 +18,60 @@
             </ul>
         </nav>
     </header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="intro-content">
+                <h1>Descubra o Poder do Limão</h1>
+                <p>O limão é uma fruta versátil, conhecida por seus benefícios à saúde, seu sabor refrescante e seu uso em mitos e curiosidades ao longo da história.</p>
+                <a href="#benefits" class="cta-btn">Saiba Mais</a>
+            </div>
+            <img src="container/frescos.png" alt="Imagem de Limões Frescos" class="intro-image">
+        </section>
+    
+        <section id="benefits" class="section benefits">
+            <h2>Benefícios do Limão</h2>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <img src="container/vitaminac.png" alt="Vitamina C">
+                    <h3>Rico em Vitamina C</h3>
+                    <p>Fortalece o sistema imunológico, ajuda na produção de colágeno e combate os radicais livres.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="container/detox.png" alt="Efeito Detox">
+                    <h3>Efeito Detox</h3>
+                    <p>Ajuda a desintoxicar o corpo, eliminando toxinas e promovendo a saúde do fígado.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="container/digestion.png" alt="Melhora a Digestão">
+                    <h3>Melhora a Digestão</h3>
+                    <p>Estimula a produção de enzimas digestivas e ajuda a aliviar desconfortos gástricos.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="myths" class="section myths">
+            <h2>Desvendando os Mitos</h2>
+            <p>O limão é cercado de mitos. Vamos esclarecer os principais:</p>
+            <ul>
+                <li><strong>O limão emagrece sozinho?</strong> Não. Ele pode ajudar em dietas, mas não substitui uma alimentação balanceada.</li>
+                <li><strong>Água com limão alcaliniza o corpo?</strong> Apesar do mito, nosso organismo regula o pH de forma natural.</li>
+                <li><strong>Limão clareia a pele?</strong> Cuidado! O uso direto na pele pode causar queimaduras ao sol.</li>
+            </ul>
+        </section>
+    
+        <section class="conclusion">
+            <h2>Explore Mais Sobre o Limão</h2>
+            <p>Receitas, dicas e curiosidades estão à sua disposição. Navegue pelo nosso site para aproveitar ao máximo essa fruta incrível.</p>
+        </section>
+    </main>
 </body>
 
 <script>
-    // Seleciona a navbar e o menu
     const navbar = document.querySelector('.navbar');
     const menu = document.querySelector('.navbar ul');
-
-    // Adiciona um evento de clique à navbar
     navbar.addEventListener('click', () => {
-        menu.classList.toggle('active'); // Alterna a classe 'active' no menu
+        menu.classList.toggle('active');
     });
 </script>
 
