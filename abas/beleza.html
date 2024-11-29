@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/receitas.css">
+</head>
+<style>
+    body{
+        background-color: rgb(247, 247, 177);
+    }
+</style>
+<body>
+    <header class="header">
+        <div><img clas= "logo" src="../container/lemon.png" alt="logo" height="60px"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../abas/receitas.html">Receitas</a></li>
+                <li><a href="../abas/beleza.html">Produtos de Beleza</a></li>
+                <li><a href="../abas/limpeza.html">Produtos de Limpeza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="receitas" class="section">
+            <h2>Produtos de Beleza</h2>
+            <div class="recipe-card">
+                <img src="../container/clareador.jpg" alt="Clareador e hidratante">
+                <div>
+                    <h3>Clareador e hidratante</h3>
+                    <p><strong>Preparação:</strong> Misture algumas gotas de água de coco com algumas gotas de suco de limão. O coco irá hidratar sua pele e o limão irá clarear e iluminá-la.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../container/cha.jpg" alt="Chá de casca de limão">
+                <div>
+                    <h3>Chá de casca de limão</h3>
+                    <p><strong>Preparação:</strong> Comece lavando bem o limão em água corrente, de preferência usando uma escovinha para remover qualquer resíduo. Em seguida, coloque uma xícara de água para ferver em uma panela. Assim que a água começar a ferver, adicione as cascas do limão e deixe cozinhar por cerca de três a cinco minutos com a panela tampada. Após esse tempo, desligue o fogo, coe o líquido e sirva. Se desejar, você pode adoçar com mel ou acrescentar um pouco de gengibre para dar mais sabor.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+
+<script>
+    const navbar = document.querySelector('.navbar');
+    const menu = document.querySelector('.navbar ul');
+
+    navbar.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
+</html>
