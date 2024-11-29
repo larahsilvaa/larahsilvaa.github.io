@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/receitas.css">
+</head>
+<style>
+    body{
+        background-color: rgb(250, 208, 169);
+    }
+</style>
+<body>
+    <header class="header">
+        <div><img clas= "logo" src="../container/lemon.png" alt="logo" height="60px"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../abas/receitas.html">Receitas</a></li>
+                <li><a href="../abas/beleza.html">Produtos de Beleza</a></li>
+                <li><a href="../abas/limpeza.html">Produtos de Limpeza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="receitas" class="section">
+            <h2>Produtos de Beleza</h2>
+            <div class="recipe-card">
+                <img src="../container/limpadores.jpg" alt="Limpadores Naturais">
+                <div>
+                    <h3>Limpadores Naturais</h3>
+                    <p><strong>Preparação:</strong> Combine óleo essencial de limão com ingredientes como vinagre ou bicarbonato de sódio.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../container/cravo.png" alt="Repelente de Mosquitos">
+                <div>
+                    <h3>Repelente de Mosquitos</h3>
+                    <p><strong>Preparação:</strong> Espete cravos da índia em limões para repelir mosquitos e outros insetos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    const navbar = document.querySelector('.navbar');
+    const menu = document.querySelector('.navbar ul');
+
+    navbar.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
+</html>
